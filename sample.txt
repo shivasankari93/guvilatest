@@ -3,3 +3,5 @@ This is my guvi task
 Adding new lines
 editing the file
 end of the file. . .
+edited
+
