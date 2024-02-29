@@ -1,0 +1,168 @@
+//palindrome
+class HelloWorld {
+    public static void main(String[] args) {
+        
+        String str = "Radar";
+        String reverseStr = "";
+        int len = str.length();
+        for (int i = (len - 1); i>=0; i--){
+            reverseStr = reverseStr + str.charAt(i);
+        }
+        System.out.println(reverseStr);
+        if(str.toLowerCase().equals(reverseStr.toLowerCase())){
+            System.out.println(str + " is a Palindrome String.");
+        }
+        else{
+            System.out.println(str + " is not a Palindrome String.");
+        }
+        
+    }
+
+//pattern x astrix
+package package1;
+
+public class Task1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Task1 obj = new Task1();
+		obj.patternx();
+
+	}
+	
+	//java program to find pattern x astrix starts here
+	public void patternx() {
+		int num = 5;
+		int k = num*2-1;
+		System.out.println(k);
+		for(int i=1;i<=k;i++)
+        {
+             
+     for(int j=1;j<=k;j++)
+         
+                 {      if(j==i || j==k-i+1)
+                        System.out.print("*");
+                         System.out.print(" ");
+                          
+	 
+             	
+                    }
+	 
+
+System.out.println();
+ 
+        }            
+		
+	}
+
+}
+
+
+//reverseString
+
+class Task2 {
+    public static void main(String[] args) {
+        Task2 obj = new Task2();
+        obj.reverse();
+    }
+    public void reverse(){
+        String str = "Akshara";
+        String reverseStr = "";
+        int len = str.length();
+        for(int i= (len-1); i >= 0; i--){
+            reverseStr += str.charAt(i);
+        }
+        System.out.println(reverseStr);
+    }
+}
+
+
+//pattern
+class HelloWorld {
+    public static void main(String[] args) {
+         int value = 4;
+         int num = 1;
+         int i , j;
+         
+     for ( i = 1; i <= value; i++){
+         for ( j = 1; j <= i; j++){
+             System.out.print(num + " ");
+             num++;
+         }
+        System.out.println();
+     }
+    }
+}
+
+//greater than
+class HelloWorld {
+    public static void main(String[] args) {
+       int x = 10;
+       int y = 50;
+       int z = 20;
+       if((x > y) && (x > z)){
+           System.out.println("The value of x is " + x + " greater than y and z" );
+       }
+       else if((y > x) && (y > z)){
+           System.out.println("The value of y is " + y + " greater than x and z" );
+       }
+        else if((z > x) && (z > y)){
+           System.out.println("The value of z is " + z + " greater than x and y" );
+       }
+    }
+}
+
+
+//students mark
+class HelloWorld {
+    public static void main(String[] args) {
+        int marks = 78;
+        if(marks == 100){
+            System.out.println("S");
+        }
+        else if((marks >= 90) && (marks <= 99)){
+             System.out.println("A");
+        }
+         else if((marks >= 80) && (marks <= 89)){
+             System.out.println("B");
+        }
+         else if((marks >= 70) && (marks <= 79)){
+             System.out.println("C");
+        }
+         else if((marks >= 50) && (marks <= 59)){
+             System.out.println("E");
+        }
+        else{
+            System.out.println("F");
+        }
+    }
+}
+
+//calculate hotel tariff
+import java.util.Scanner;
+
+public class HotelTariffCalculator {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter the month (1-12): ");
+        int month = scanner.nextInt();
+       
+        double baseRoomRent = 1500; // Base room rent
+        double roomRent;
+       
+        switch (month) {
+            case 4:
+            case 5:
+            case 6:
+            case 11:
+            case 12:
+                roomRent = baseRoomRent * 2; // Double the room rent during peak seasons
+                break;
+            default:
+                roomRent = baseRoomRent;
+                break;
+        }
+       
+        System.out.printf("The room rent for the selected month is: $%.2f", roomRent);
+    }
+}
